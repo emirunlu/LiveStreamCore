@@ -29,19 +29,35 @@ namespace LiveStreamCore.Controllers
         private static List<LivestreamMetadata> metadataListSeeded = new List<LivestreamMetadata>() {
             new LivestreamMetadata() {
                 id = 1,
-                name = "My Desktop",
+                name = "My Desktop (HLS)",
                 description = "Welcome to my Desktop stream!",
+                username = "EmirUnluturk",
+                src = "http://localhost:8080/hls/room.m3u8",
+                thumbnail = "http://localhost:8080/room.jpg"
+            },
+            new LivestreamMetadata() {
+                id = 2,
+                name = "My Webcam (HLS)",
+                description = "Welcome to my Webcam stream!",
                 username = "EmirUnluturk",
                 src = "http://localhost:8080/hls/webcam.m3u8",
                 thumbnail = "http://localhost:8080/webcam.jpg"
             },
             new LivestreamMetadata() {
-                id = 2,
-                name = "My Webcam",
+                id = 3,
+                name = "My Desktop (DASH)",
+                description = "Welcome to my Desktop stream!",
+                username = "EmirUnluturk",
+                src = "http://localhost:8080/dash/room_src.mpd",
+                thumbnail = "http://localhost:8080/room.jpg"
+            },
+            new LivestreamMetadata() {
+                id = 4,
+                name = "My Webcam (DASH)",
                 description = "Welcome to my Webcam stream!",
                 username = "EmirUnluturk",
-                src = "http://localhost:8080/hls/room.m3u8",
-                thumbnail = "http://localhost:8080/room.jpg"
+                src = "http://localhost:8080/dash/webcam_hd720.mpd",
+                thumbnail = "http://localhost:8080/webcam.jpg"
             }
         };
 
